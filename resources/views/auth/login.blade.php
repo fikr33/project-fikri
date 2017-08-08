@@ -10,7 +10,7 @@
                     {!! Form::open(['url'=>'login', 'class'=>'form-horizontal']) !!}
 
                     <div class="form-group{{ $errors->has('email') ? 'has-error' : ''}}">
-                        {!! Form::label('email', 'Email', ['class'=>'col-md-4 control-label']) !!}
+                        {!! Form::label('email', 'Alamat Email', ['class'=>'col-md-4 control-label']) !!}
                         <div class="col-md-6">
                             {!! Form::email('email', null, ['class'=>'form-control']) !!}
                             {!! $errors->first('email', '<p class="help-block">:message</p>') !!}
@@ -29,7 +29,7 @@
                         <div class="col-md-6 col-md-offset-4">
                             <div class="checkbox">
                                 <label>
-                                    {!! Form::checkbox('remember') !!} Remember Me
+                                    {!! Form::checkbox('remember') !!} Ingat Saya
                                 </label>
                             </div>
                         </div>
@@ -41,7 +41,7 @@
                                 <i class="fa fa-btn fa-sign-in"></i> Login
                             </button>
 
-                            <a class="btn btn-link" href="{{ url('/password/reset') }}">Forget Your Password</a>
+                            <a class="btn btn-link" href="{{ url('/password/reset') }}">Lupa Password</a>
                         </div>
                     </div>
                     {!! Form::close() !!}
